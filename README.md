@@ -20,5 +20,14 @@ Abra [http://localhost:3000](http://localhost:3000). Para gerar a versão de pro
 - `components/sections/Sections.tsx`: Hero/Sobre, processo, tecnologias, projetos, serviços e contato.
 - `data/`: dicionários PT/EN e dados tipados das tecnologias e projetos.
 - `public/images/felipe.webp`: retrato otimizado do portfólio.
+- `app/sitemap.ts` e `app/robots.ts`: sitemap e regras para mecanismos de busca.
 
 Os links e endereços dos projetos são exemplos e podem ser atualizados em `data/projects.ts`. Os perfis e o e-mail de contato também são placeholders no componente de contato.
+
+## SEO
+
+O domínio usado nas URLs canônicas, no sitemap e no `robots.txt` é `https://felipegoulart.dev` por padrão. Para outro domínio em deploy, defina `NEXT_PUBLIC_SITE_URL`, por exemplo:
+
+```env
+NEXT_PUBLIC_SITE_URL=https://seu-dominio.com
+```
