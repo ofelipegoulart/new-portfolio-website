@@ -31,3 +31,5 @@ O domínio usado nas URLs canônicas, no sitemap e no `robots.txt` é `https://f
 ```env
 NEXT_PUBLIC_SITE_URL=https://seu-dominio.com
 ```
+
+Para publicar no Cloudflare Pages, use `npm run build` como comando de build e `out` como diretório de saída.
